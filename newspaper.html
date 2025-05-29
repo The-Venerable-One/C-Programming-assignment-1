@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>News Today</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            line-height: 1.6;
+            display: flex;
+            overflow-x: hidden;
+        }
+
+        .nav-bar {
+            width: 250px;
+            height: 100vh;
+            background-color: #1f1f1f;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .nav-bar h2 {
+            color: #ff9e00;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .nav-bar a {
+            display: block;
+            padding: 15px;
+            color: #ff9e00;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-bar a:hover {
+            background-color: #333;
+            border-radius: 5px;
+        }
+
+        .main-content {
+            margin-left: 270px;
+            width: calc(100% - 270px);
+            padding: 40px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #ff9e00;
+            margin-bottom: 20px;
+        }
+
+        .headline {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+			text-align: center;
+        }
+
+        .article {
+            margin-bottom: 30px;
+			padding: 10px;
+			margin-top: 20px;
+        }
+
+        .article h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+		.article h3:hover{
+		color: #ff9e00;
+		transition: 0.2s;
+		}
+        .article p {
+            font-size: 1.1rem;
+            color: #c0c0c0;
+			text-align: justify;
+        }
+		
+		.article:hover{
+		background-color: #333;
+		transform: scale(1.01);
+		cursor: pointer;
+		border-radius: 15px;
+		transition: 0.2s;
+		}
+
+        .news-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .news-column {
+            flex: 1;
+            min-width: 300px;
+            max-width: 45%;
+        }
+
+        .news-column h3 {
+            font-size: 25px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 1rem;
+            color: #888;
+            margin-top: 40px;
+        }
+
+        .sports {
+            display: flex;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .nav-bar {
+                width: 200px;
+                padding: 15px;
+            }
+
+            .nav-bar a {
+                font-size: 1rem;
+            }
+
+            .headline {
+                font-size: 1.5rem;
+            }
+
+            .article h3 {
+                font-size: 1.4rem;
+            }
+
+            .news-column {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <h2>RAJ NEWS</h2>
+        <ul>
+            <li><a href="newspaper.html" target="_blank">Newspaper</a></li>
+            <li><a href="portfolio.html" target="_blank">Portfolio</a></li>
+            <li><a href="blog.html" target="_blank">Blog</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <h1>Raj News</h1>
+            <p style="text-align: center; font-size: 1.2rem;">Your Source for the Latest News</p>
+        </header>
+
+        <section class="headline-article">
+            <h3 class="headline">Headline: Major Global Events Unfolding Right Now</h3>
+            
+        </section>
+
+        <section class="news-section">
+            <div class="news-column">
+                <article class="article">
+                    <h3>New Discoveries in Space Exploration</h3>
+                    <p>Recent advancements in space technology have opened doors to new discoveries, with significant breakthroughs in satellite technology and interstellar research.</p>
+                </article>
+            </div>
+
+            <div class="news-column">
+                <article class="article">
+                    <h3>Local Elections Set to Begin Next Week</h3>
+                    <p>With local elections fast approaching, politicians across the country are preparing for their campaigns and public appearances. Find out who's running and what they stand for.</p>
+                </article>
+            </div>
+        </section>
+   <h2>Opinion</h2>
+        <section class="article">
+         
+            <h3>The Future of Artificial Intelligence</h3>
+            <p>As artificial intelligence continues to advance, many experts have differing opinions on its potential impact on society. Some see it as a tool for progress, while others raise concerns about its ethical implications.</p>
+        </section>
+<h2>Sports</h2>
+        <section class="sports">
+            
+            <div class="article">
+                <h3>Upcoming Major League Football Championship</h3>
+                <p>The Major League Football Championship is just around the corner, and teams are gearing up for the final showdown. Who will take the trophy this year? Stay tuned!Major League Soccer (MLS) is a professional soccer league sanctioned by the United States Soccer Federation, which represents the sport's highest level in the United States.It comprises 30 teams, with 27 in the United States and 3 in Canada. MLS is one of the major professional sports leagues in the United States and Canada. The league is headquartered in Midtown Manhattan.</p>
+            </div>
+
+            <div class="article">
+                <h3>NBA Playoffs: Who Will Win?</h3>
+                <p>The National Basketball Association (NBA) playoffs is the annual elimination tournament held to determine the league champion. The four-round, best-of-seven tournament is held after the league's regular season and its preliminary postseason tournament, the NBA play-in tournament. Six teams from each of the two conferences automatically advance to the playoffs based on regular season winning percentage, while those teams finishing seven through 10 from each conference compete in the play-in tournament to determine the final two playoff seeds.</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2025 Sohan Raj Adhikari</p>
+        </footer>
+    </main>
+
+</body>
+</html>

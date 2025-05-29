@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RAJ's Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            line-height: 1.6;
+            display: flex;
+        }
+
+        .nav-bar {
+            width: 250px;
+            height: 100vh;
+            background-color: #1f1f1f;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .nav-bar h2 {
+            color: #ff9e00;
+            margin-bottom: 20px;
+        }
+
+        .nav-bar a {
+            display: block;
+            padding: 15px;
+            color: #ff9e00;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-bar a:hover {
+            background-color: #333;
+            border-radius: 5px;
+        }
+
+        .main-content {
+            margin-left: 270px;
+            width: calc(100% - 270px);
+            padding: 40px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #ff9e00;
+            margin-bottom: 20px;
+        }
+
+        .blog-post-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .blog-post {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 8px;
+            width: calc(50% - 10px);
+        }
+
+        .blog-post h3 {
+            color: #ff9e00;
+            margin-bottom: 10px;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+		.blog-post:hover{
+		background-color: #333;
+		transform: scale(1.01);
+		cursor: pointer;
+		border-radius: 15px;
+		transition: 0.2s;
+		}
+
+        .read-more {
+            color: #ff9e00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 1rem;
+            color: #888;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .nav-bar {
+                width: 200px;
+                padding: 15px;
+            }
+
+            .nav-bar a {
+                font-size: 1rem;
+            }
+
+            .blog-post {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <h2>RAJ's Blog</h2>
+        <ul>
+            <li><a href="newspaper.html" target="_blank">Newspaper</a></li>
+            <li><a href="portfolio.html" target="_blank">Portfolio</a></li>
+            <li><a href="blog.html" target="_blank">Blog</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <h1>Welcome to My Blog</h1>
+        </header>
+
+        <section class="blog-posts">
+            <div class="blog-post-container">
+                <article class="blog-post">
+                    <h3>First Blog Post</h3>
+                    <p>This is a brief introduction to my first blog post. I share insights on web development, programming, and tech trends...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+
+                <article class="blog-post">
+                    <h3>Exploring JavaScript</h3>
+                    <p>JavaScript is a powerful language for building dynamic web applications. Let's dive into some essential concepts...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+
+                <article class="blog-post" style="width: 100%;">
+                    <h3>Web Development Trends in 2025</h3>
+                    <p>The web development landscape is constantly evolving. Here are some key trends to watch out for in 2025...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+
+                <article class="blog-post" style="width: 100%;">
+                    <h3>Understanding Databases</h3>
+                    <p>Databases are crucial for storing and managing data efficiently. Let's explore SQL and NoSQL databases...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2025 RAJ's Blog</p>
+        </footer>
+    </main>
+
+</body>
+</html>
